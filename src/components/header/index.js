@@ -5,7 +5,7 @@ import { avatar, postTask } from "../../assets/images/index";
 import { UserContext } from "../../context/userContext";
 // import { api } from "../../_api/apiService";
 
-export default function Header(props) {
+export default function Header({props}) {
   const { user, updateUser } = useContext(UserContext);
   const location = useLocation();
   const { logo } = props;

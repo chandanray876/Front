@@ -67,7 +67,7 @@ export default function WebLayout() {
     <BadRequest />
   ) : (
     <>
-      <Header logo={headerLogo} />
+      <Header props={{logo: headerLogo}} />
       <Outlet context={{ banner: banner }} />
       <Footer
         setting={{
