@@ -1,0 +1,785 @@
+.help-block {
+  color: red;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+ol,
+ul {
+  margin-top: 0;
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+}
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+}
+.asterisk {
+  color: red;
+}
+.alert .alert-success .alert-block {
+  color: green;
+}
+.alert-success {
+  color: #3c763d !important;
+  background-color: #dff0d8 !important;
+}
+.wojo .viewheading {
+  background-color: #5a5e69;
+}
+.wojo .viewheading span {
+  color: #ffffff;
+}
+div.alphabet {
+  display: table;
+  width: 100%;
+  margin-bottom: 1em;
+}
+div.alphabet span.active {
+  color: black;
+}
+
+div.alphabet span {
+  display: table-cell;
+  color: #3174c7;
+  cursor: pointer;
+  text-align: center;
+  width: 2.5em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.813rem;
+}
+
+/*31-12-2019*/
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+  background: #d63f5d !important;
+}
+.dataTables_wrapper .row:last-child {
+  display: flex;
+}
+.dataTables_wrapper .row:last-child .col-sm-5 {
+  order: 2;
+  -webkit-order: 2;
+  text-align: right;
+}
+.dataTables_wrapper .row:last-child .col-sm-5 .dataTables_info {
+  padding-right: 20px;
+}
+.dataTables_wrapper .row:last-child .col-sm-7 {
+  order: 1;
+  -webkit-order: 1;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+  text-align: left;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin: 2px 0 15px;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background-color: #d63f5d;
+  border-color: #d63f5d;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.pagination {
+  padding-left: 20px;
+}
+.pagination > li a {
+  border: none;
+  padding: 6px 14px;
+  color: #000000;
+}
+.pagination > li.previous a,
+.pagination > li.next a {
+  font-size: 0;
+  position: relative;
+  padding: 0 10px;
+  display: inline-block;
+}
+.pagination > li.previous a::before {
+  content: "\e0cd";
+}
+.pagination > li.previous a::before,
+.pagination > li.next a::before {
+  font-size: 20px;
+  font-family: "WojoIcons";
+}
+.pagination > li.next a::before {
+  content: "\e0ce";
+}
+.pagination > .disabled > span {
+  border: none;
+}
+.mbsc-fr-scroll {
+  display: none !important;
+}
+.pagination > li.page-item:last-child span,
+.pagination > li.page-item:last-child a {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.pagination > li.page-item:first-child span,
+.pagination > li.page-item:first-child a {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.pagination > li > a,
+.pagination > li > span {
+  float: none;
+}
+ul.wojo.tabs li {
+  padding: 0 0 0.85em 0;
+  margin-right: 10px !important;
+}
+ul.wojo.tabs.fixed li a {
+  padding: 10px;
+}
+ul.wojo.tabs li a.active,
+ul.wojo.tabs li a:hover {
+  background-color: #eb504d;
+  padding: 10px;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.13);
+  color: #ffffff !important;
+}
+.wojo.secondary.message {
+  margin: 0 0 25px !important;
+  padding: 25px 0 10px;
+  border-bottom: 2px solid #000;
+}
+ul.wojo.tabs.fixed {
+  top: inherit !important;
+}
+.wojo.wojo-left {
+  background-color: #fff !important;
+  border: 1px solid #daddde !important;
+  padding: 1em !important;
+  margin: 2em 0 !important;
+  border-radius: 0.25em !important;
+  width: 68% !important;
+  float: left;
+}
+.wojo.wojo-right {
+  background-color: #fff !important;
+  border: 1px solid #daddde !important;
+  padding: 1em !important;
+  margin: 2em 0 !important;
+  border-radius: 0.25em !important;
+  width: 30% !important;
+  float: right;
+}
+.bg-yellow {
+  background-color: #f39c12 !important;
+}
+.wojo.segment-second .accountmsg,
+.wojo.segment-second ul li {
+  font-size: 14px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
+}
+#categories-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehicle_enquires-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#enquires-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#subscription-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+.ui-sortable-helper {
+  display: table;
+}
+.no-sort {
+  background: none;
+}
+
+#vehicle-reviews-datatable_length label {
+  display: block !important ;
+}
+#pages-datatable_length label {
+  display: block !important ;
+}
+#staff-datatable_length label {
+  display: block !important ;
+}
+#role-datatable_length label {
+  display: block !important ;
+}
+#adminvehiclereview-datatable_length label {
+  display: block !important ;
+}
+
+#users-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#ads-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+.help-block {
+  color: red;
+}
+.hide {
+  display: none;
+}
+#emailtemplates-datatable_length label {
+  display: block !important ;
+}
+.error-page {
+  padding: 3em !important;
+  text-align: center;
+}
+.error-page h2 {
+  font-size: 3em;
+  margin: 0 0 30px;
+  color: red;
+}
+.error-page p {
+  padding: 20px 0 0;
+}
+#banlist-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehicles-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#news-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .dataTables_wrapper .dataTables_length {
+    width: 100% !important;
+  }
+  .dataTables_wrapper .dataTables_filter {
+    max-width: 100% !important;
+  }
+  .wojo.sortable {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  ul.wojo.tabs.fixed {
+    box-shadow: inset 0px -1px 0 0 #daddde !important;
+    bottom: inherit !important;
+  }
+}
+
+.wojo.breadcrumb {
+  width: 100% !important;
+  padding: 15px 15px !important;
+  background-color: #f7f7f7 !important;
+}
+ol.breadcrumb {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+  border-radius: 0 !important;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+.ezdz-dropzone {
+  height: auto;
+}
+.settingrequiremsg {
+  font-size: 14px;
+}
+.wojo.top.right.detached.label {
+  top: 5px !important;
+}
+.wojo .dataTables_length {
+  width: 50%;
+  margin: 20px 0;
+  float: left;
+}
+.wojo .dataTables_filter {
+  width: 100%;
+  float: right;
+  margin: 20px 0;
+}
+.wojo.tertiary {
+  position: relative;
+  background-color: #fbfbfb;
+}
+.wojo.tertiary .alphabet {
+  margin: 0;
+  padding: 10px 15px 0;
+}
+.wojo.tertiary .alphabet .alphabet-info-display {
+  display: none;
+}
+.wojo.tertiary div.alphabet ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  display: block;
+}
+#vehicledrivetypesmanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehiclebadgemanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehiclefueltypesmanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehicletransmissionsmanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehiclebodystylemanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehiclecolorsmanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehicleseriesmanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehiclefeaturemanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+#vehiclelifestylemanager-datatable_length label {
+  display: block !important ;
+}
+.dataTables_wrapper .dataTables_length {
+  width: 50%;
+}
+
+h4.newaddheading {
+  display: block;
+  float: none;
+  width: 100%;
+  margin-bottom: 1.3em !important;
+  position: relative;
+  z-index: 9;
+}
+
+.mbsc-mobiscroll
+  .mbsc-cal-c
+  .mbsc-cal
+  .mbsc-cal-body
+  .mbsc-cal-row
+  .mbsc-selected
+  .mbsc-cal-cell-txt
+  + div,
+.mbsc-mobiscroll .mbsc-cal-day-date + div {
+  visibility: hidden;
+}
+
+input:-webkit-autofill {
+  box-shadow: transparent !important;
+  -webkit-box-shadow: transparent !important;
+  background-color: transparent !important;
+  -webkit-text-color: inherit;
+  color: inherit;
+}
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-color: rgb(232, 240, 254) !important;
+  background-image: none !important;
+  color: -internal-light-dark(black, white) !important;
+}
+.wojo.table {
+  font-size: 14px;
+  border-collapse: collapse !important;
+}
+.wojo.table.sortable tbody tr,
+.wojo.table.grid tbody tr {
+  border: none;
+}
+.wojo.table.sortable tbody tr td,
+.wojo.table.grid tbody th {
+  border: 1px solid #ddd !important;
+}
+.wojo.sortable.table thead th {
+  background: #d63f5d !important;
+  color: #fff;
+  font-size: 14px;
+  border-bottom: none !important;
+}
+.wojo.sortable.table thead th:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.login-outer {
+  background: #fff;
+  padding: 15px;
+}
+nav > ul > li > a {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+footer {
+  background: #333;
+  padding: 20px 0;
+  font-size: 13px;
+  color: #fff;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul > li > a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+nav > ul ul > li > a:hover {
+  background-color: #d63f5d;
+}
+header .topnav .navitem {
+  display: flex;
+  align-items: center;
+}
+.wojo.separator {
+  background: #fff;
+}
+.text {
+  font-size: 14px;
+}
+#crumbs {
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Responsive start */
+@media screen and (max-width: 1400px) {
+  .wojo.table {
+    font-size: 12px;
+  }
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wojo.tertiary div.alphabet ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wojo.tertiary div.alphabet ul a {
+    padding: 0;
+  }
+  .wojo.tertiary {
+    padding-top: 64px !important;
+  }
+  .wojo.top.right.detached.label {
+    top: 59px !important;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .wojo.tertiary {
+    padding-top: 90px !important;
+  }
+  .wojo.top.right.detached.label {
+    top: 85px !important;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wojo.tertiary {
+    padding-top: 120px !important;
+  }
+  .wojo.top.right.detached.label {
+    top: 115px !important;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav > ul > li.opened ul {
+    display: none;
+  }
+  .topnav nav > ul > li.opened:hover ul {
+    display: block;
+  }
+  .topnav nav > ul > li:hover ul {
+    display: block;
+    bottom: auto !important;
+    top: 100% !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .topnavnav > ul > li.opened ul {
+    bottom: auto !important;
+    top: 100% !important;
+  }
+}
+
+.vechile-images-list {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+}
+.vechile-images-list li {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  list-style: none;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.vechile-images-list li:last-child {
+  margin-right: 0px;
+}
+.vechile-images-list li img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .vechile-images-list {
+    text-align: center;
+  }
+  .vechile-images-list li {
+    margin-right: 0px;
+  }
+  .vechile-images-list li img {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.hours {
+  padding-top: 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+.field.right.approval-button {
+  text-align: left;
+  padding-left: 25px;
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+
+.field.right.approval-button .wojo.positive.button {
+  width: 25%;
+  padding: 18px 0px;
+}
+
+/*10-08-2020*/
+.wojo.form textarea,
+.wojo.form select,
+.wojo.form input[type="text"],
+.wojo.form input[type="email"],
+.wojo.form input[type="date"],
+.wojo.form input[type="password"],
+.wojo.form input[type="number"],
+.wojo.form input[type="tel"],
+.wojo.form .fileinput > input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+.selecter-selected {
+  border: 1px solid #ccc;
+  height: 46px;
+}
+.select2-container--default .select2-selection--multiple {
+  padding: 5px 30px 5px 10px;
+  border: 1px solid #ccc;
+  height: auto !important;
+}
+.select2-container--default.select2-container--focus
+  .select2-selection--multiple,
+.wojo.form input[type="text"]:focus,
+.wojo.form select:focus,
+.wojo.form input[type="email"]:focus,
+.wojo.form input[type="date"]:focus,
+.wojo.form input[type="password"]:focus,
+.wojo.form input[type="number"]:focus,
+.wojo.form input[type="url"]:focus,
+.wojo.form input[type="tel"]:focus,
+.wojo.form textarea:focus {
+  border: 1px solid #d63f5d;
+}
+.select2-selection.select2-selection--multiple::after {
+  font-family: "WojoIcons";
+  content: "\e051";
+  position: absolute;
+  top: 0.75em;
+  right: 10px;
+  color: #daddde;
+}
+.selecter-selected {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 30px 10px 15px;
+}
+.selecter-selected::after {
+  top: 0.75em;
+  right: 10px;
+}
+.selecter-options {
+  border: 1px solid #d63f5d;
+}
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice {
+  background-color: #ececec;
+  border: 1px solid #bdbdbd;
+  border-radius: 2px;
+  font-size: 13px;
+}
+.wojo.form .field.image .ezdz-accept {
+  border: none !important;
+}
+.selecter.multiple .selecter-options {
+  border: none;
+}
+.wojo.action.labels .label,
+.wojo.action.label {
+  padding: 0.85em 1em;
+  color: #d63f5d;
+  background-color: #ffffff;
+}
+a.wojo.action.labels .label:hover,
+.wojo.action.labels a.label:hover,
+a.wojo.action.label:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #d63f5d;
+}
+.dataTables_wrapper .dataTables_filter .form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 46px;
+  padding: 10px 30px 10px 15px;
+}
+.dataTables_wrapper .dataTables_filter label i {
+  top: 11px;
+  right: 14px;
+}
+.wojo.tertiary .alphabet {
+  display: none;
+}
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-on {
+  padding: 5px;
+}
+.wojo.sortable.table thead th {
+  background: #ececec;
+}
+.wojo.sortable.table thead th:hover {
+  background-color: #dfdfdf;
+  color: #000;
+}
+i.rounded.icon.outline.positive,
+i.rounded.icon.outline.primary,
+i.rounded.icon.outline.negative {
+  border: 1px solid rgb(215, 215, 215);
+  color: rgb(75, 75, 75);
+  box-shadow: none;
+}
+i.rounded.icon.outline.positive:hover,
+i.rounded.icon.outline.primary:hover,
+i.rounded.icon.outline.negative:hover {
+  background-color: rgba(214, 63, 93, 0.2);
+  border-color: rgba(214, 63, 93, 0.4);
+  color: rgba(214, 63, 93);
+}
+.wojo .viewheading {
+  background-color: #ececec;
+}
+.wojo .viewheading span {
+  color: #000;
+  font-weight: 600;
+}
+.wojo.table tbody tr:nth-child(2n) {
+  background-color: rgba(214, 63, 93, 0.05);
+}
+/*10-08-2020*/

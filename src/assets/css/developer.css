@@ -1,0 +1,27 @@
+.validation {
+  font-size: 12px;
+  color: #ff0000;
+}
+
+.nf-404 {
+  color: #ff0000;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-dark {
+  background: linear-gradient(to right, #da2e7d 0%, #ec514c 100%);
+}
+
+.container-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+bor:visited {
+  border: 1px solid #000;
+}
