@@ -41,7 +41,6 @@ export default function ContactUs() {
       }
     } else getStaticProps({ setStaticProps, setError });
   }, [staticProps]);
-  console.log(error)
 
   useEffect(() => {
     if (staticProps) {
@@ -65,11 +64,11 @@ export default function ContactUs() {
       const response = await api({
         url: `/enquiry`,
         method: "post",
-        data: formData,
+        data: inputs,
       });
       setLoading(false);
       console.log(response);
-      if (response?.data?.code === 200 && response?.data?.status === true) {
+      if (response?.status === 200 && response?.data?.status === true) {
         toast.success(response?.data?.message);
         setInputs(contactFormFields);
       } else toast.error(response?.data?.message);

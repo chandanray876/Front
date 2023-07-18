@@ -59,7 +59,7 @@ export default function Home() {
             <span className="sub-heading">
               Use Our awesome Search tool to FIND service provider!!!
             </span>
-            <div className="d-flex flex-wrap justify-content-between">
+            {/* <div className="d-flex flex-wrap justify-content-between">
               <div className="search-input-field">
                 <div className="row">
                   <div className="col-sm-6">
@@ -96,7 +96,7 @@ export default function Home() {
               </i>
               Trending Keywords: Clown, Cocktails specialist, DJ music player,
               Dancers, Chef, Host
-            </span>
+            </span> */}
           </div>
           <i className="serervice-icon1">
             <img src={serviceIcon1} alt="" />
@@ -133,7 +133,7 @@ export default function Home() {
             >
               {popularServicesFixer?.map((item, index) => (
                 <div className="item" key={index}>
-                  <Link to="">
+                  <Link to="list">
                     <span className="item-img">
                       <img src={item.image} alt="" />
                     </span>
@@ -225,7 +225,7 @@ export default function Home() {
             {testimonialsList?.map((testimonial, index) => (
               <div className="item" key={index}>
                 <div className="customer-block">
-                  <div className="customer-comment">{testimonial.message}</div>
+                  <div className="customer-comment">{testimonial.description}</div>
                   <div className="customer-info">
                     <figure>
                       <img src={serviceIcon6} alt="" />
@@ -239,7 +239,7 @@ export default function Home() {
           </OwlCarousel>
         )}
       </div>
-      <div className="popular-services mid-block">
+      {/* <div className="popular-services mid-block">
         <div className="container">
           <h2>See what others are getting done</h2>
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -273,8 +273,8 @@ export default function Home() {
             </OwlCarousel>
           )}
         </div>
-      </div>
-      <div className="get-started mid-block text-center">
+      </div> */}
+      {/* <div className="get-started mid-block text-center">
         <div className="container">
           <h2>Get Started</h2>
           <p>
@@ -285,8 +285,8 @@ export default function Home() {
             <span className="btn-gradient">New User</span>
           </div>
         </div>
-      </div>
-      <div className="our-blog mid-block text-center">
+      </div> */}
+      {/* <div className="our-blog mid-block text-center">
         <div className="container">
           <h2>Our Blog</h2>
           <p>
@@ -336,7 +336,7 @@ export default function Home() {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

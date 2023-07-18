@@ -8,9 +8,10 @@ export async function getCMSPages(
   { setItems, setLoading, setError }
 ) {
   try {
-    const response = await axios.get(url + "/" + slugName);
+    const response = await axios.get(url + "/getCms/" + slugName);
+    console.log(response.data)
     if (response.status === 200) {
-      setItems(response?.data);
+      setItems(response?.data?.data);
       setLoading(false);
     }
   } catch (err) {

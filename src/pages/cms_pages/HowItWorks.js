@@ -43,7 +43,7 @@ export default function HowItWorks() {
         ) : (
           <div
             className="container"
-            dangerouslySetInnerHTML={{ __html: items.description }}
+            dangerouslySetInnerHTML={{ __html: items?.description }}
           />
         )}
       </div>

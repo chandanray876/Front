@@ -30,7 +30,7 @@ function Newsletter({ setView }) {
         data: inputs,
       });
       setLoading(false);
-      if (response?.data?.code === 200 && response?.data?.status === true) {
+      if (response?.status === 200 && response?.data?.status === true) {
         toast.success(response?.data?.message);
         setView(false);
       } else

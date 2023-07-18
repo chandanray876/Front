@@ -14,6 +14,7 @@ import Testimonials from "../pages/Testimonials";
 import BrowseJob from "../pages/jobs/BrowseJob";
 import JobDetail from "../pages/jobs/JobDetail";
 import Chat from "../pages/Chat";
+import List from "../pages/list/List";
 
 export const webRoutes = [
   { index: true, element: <Home /> },
@@ -34,4 +35,5 @@ export const webRoutes = [
   { path: "blog", element: <Blog /> },
   { path: "blog_detail/:id", element: <BlogDetail /> },
   { path: "post_job", element: <PostJob /> },
+  { path: "list", element: <List /> },
 ];

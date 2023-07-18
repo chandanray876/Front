@@ -61,7 +61,7 @@ export default function Footer({ setting }) {
               </ul>
             </div>
             <div className="col-lg-2 col-md-6 ft-links">
-              <span className="ft-link-head">Navigation</span>
+              {/* <span className="ft-link-head">Navigation</span>
               <ul className="ft-link">
                 <li>
                   <Link to="/">Home</Link>
@@ -87,10 +87,10 @@ export default function Footer({ setting }) {
                 <li>
                   <Link to="/contact_us">Contact Us</Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="col-lg-3 col-md-6 quick-links">
-              <span className="ft-link-head">Quick Links</span>
+              {/* <span className="ft-link-head">Quick Links</span>
               <ul className="ft-link">
                 <li>
                   <Link to="/terms_conditions">Terms & Conditions</Link>
@@ -104,7 +104,7 @@ export default function Footer({ setting }) {
                 <li>
                   <Link to="/help_support">Help & Support</Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="col-lg-3 col-md-6">
               <span className="ft-link-head">Contacts</span>
@@ -132,7 +132,7 @@ export default function Footer({ setting }) {
           <div className="ft-bottom-link">
             <Link to="/">Home</Link>
             <Link to="/about_us">About us</Link>
-            <Link to="/blog">Blogs</Link>
+            {/* <Link to="/blog">Blogs</Link> */}
             <Link to="/terms_conditions">Terms</Link>
             <Link to="/privacy_policy">Privacy</Link>
             <Link to="/contact_us">Contacts</Link>

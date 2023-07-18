@@ -206,3 +206,30 @@ export const monthNames = [
   "Nov",
   "Dec",
 ];
+
+export const ListFixer = [
+  {
+    icon1: newCustomers,
+    icon2: newCustomers2,
+    heading: "Meet New Customers",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+      url: '/pdf/dd12-13_0.pdf'
+  },
+  {
+    icon1: revenue,
+    icon2: revenue2,
+    heading: "Grow Your Revenue",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+      url: '/pdf/dummy.pdf'
+  },
+  {
+    icon1: revenue,
+    icon2: revenue2,
+    heading: "Build Your Online Reputation",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+      url: '/pdf/sample.pdf'
+  },
+];

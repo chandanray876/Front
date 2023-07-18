@@ -45,23 +45,23 @@ export default function Header({props}) {
     };
   }, []);
 
-  useEffect(() => {
-    if (location.pathname === "/login") setModalView("SignIn");
-  }, [location]); // eslint-disable-line
+  // useEffect(() => {
+  //   if (location.pathname === "/login") setModalView("SignIn");
+  // }, [location]); // eslint-disable-line
 
-  function handleDropdown(e) {
-    if (e.target.nextSibling.className.includes("show")) setDropdownClass(null);
-    else setDropdownClass(e.target.nextSibling.className + " show");
-  }
+  // function handleDropdown(e) {
+  //   if (e.target.nextSibling.className.includes("show")) setDropdownClass(null);
+  //   else setDropdownClass(e.target.nextSibling.className + " show");
+  // }
 
-  function handleSubDropdown(e) {
-    setSubDropdown(e.target.innerText);
-  }
+  // function handleSubDropdown(e) {
+  //   setSubDropdown(e.target.innerText);
+  // }
 
   // User logout
-  function handleLogout() {
-    updateUser({});
-  }
+  // function handleLogout() {
+  //   updateUser({});
+  // }
 
   // useEffect(() => {
   //   // Alert if clicked on outside of element
@@ -93,14 +93,14 @@ export default function Header({props}) {
           }`}
         >
           <div className={`container${user?.email ? "-2" : ""}`}>
-            <span
+            {/* <span
               className="post-task-link icon"
               data-toggle="modal"
               data-target="#postjob-popup"
             >
               <span>Post a task</span>
               <img src={postTask} alt="mob-post" />
-            </span>{" "}
+            </span> */}
             <span className="navbar-brand">
               <Link to="/">
                 <img src={logo} alt="logo" className="logo" />
@@ -123,7 +123,7 @@ export default function Header({props}) {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link to="/post_job">
                     <span
                       className="nav-link post-job"
@@ -133,19 +133,19 @@ export default function Header({props}) {
                       Post a Job
                     </span>
                   </Link>
-                </li>
-                <li
+                </li> */}
+                {/* <li
                   ref={categoriesRef}
                   className="nav-item dropdown desk-category"
-                >
-                  <span
+                > */}
+                  {/* <span
                     className="nav-link dropdown-toggle"
                     data-toggle="dropdown"
                     onClick={handleDropdown}
                   >
                     Categories
-                  </span>
-                  <div
+                  </span> */}
+                  {/* <div
                     className={
                       dropdownClass || "dropdown-menu category-dropdown"
                     }
@@ -153,7 +153,7 @@ export default function Header({props}) {
                     <span className="cat-drop-title">
                       What are you looking for?
                     </span>
-                    {/* <!-- Nav tabs --> */}
+                   
                     <ul className="nav nav-tabs category-tab">
                       <li className="nav-item" onClick={handleSubDropdown}>
                         <span
@@ -176,7 +176,7 @@ export default function Header({props}) {
                         </span>
                       </li>
                     </ul>
-                    {/* <!-- Tab panes --> */}
+                    
                     <div className="tab-content">
                       <div
                         className={`tab-pane${
@@ -185,16 +185,7 @@ export default function Header({props}) {
                         id="tasker"
                       >
                         <p>I am looking for work in...</p>
-                        {/* <div className="tab-catlist-outer">
-                          <ul className="tab-catlist">
-                            {categories &&
-                              categories.map((category, index) => (
-                                <li key={index}>
-                                  <span>{category.title}</span>
-                                </li>
-                              ))}
-                          </ul>
-                        </div> */}
+                        
                       </div>
                       <div
                         className={`tab-pane${
@@ -203,21 +194,11 @@ export default function Header({props}) {
                         id="posters"
                       >
                         <p>I need to hire someone for...</p>
-                        {/* <div className="tab-catlist-outer">
-                          <ul className="tab-catlist">
-                            {categories &&
-                              categories.map((category, index) => (
-                                <li key={index}>
-                                  <span>{category.title}</span>
-                                </li>
-                              ))}
-                          </ul>
-                        </div> */}
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li className="nav-item dropdown mob-category">
+                  </div> */}
+                {/* </li> */}
+                {/* <li className="nav-item dropdown mob-category">
                   <span
                     className="nav-link dropdown-toggle"
                     data-toggle="dropdown"
@@ -258,15 +239,25 @@ export default function Header({props}) {
                   onClick={() => setModalView("BrowseTasks")}
                 >
                   <span className="nav-link">Browse tasks</span>
+                </li> */}
+                <li className="nav-item">
+                  <Link to="/about_us">
+                    <span className="nav-link">About Us</span>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/how_it_works">
-                    <span className="nav-link">How it works</span>
+                  <Link to="/contact_us">
+                    <span className="nav-link">Contact Us</span>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/list">
+                    <span className="nav-link">List</span>
                   </Link>
                 </li>
               </ul>
               <div className="right-menu d-flex flex-wrap align-items-center">
-                {user?.email ? (
+                {/* {user?.email ? (
                   <>
                     <span>Help</span>
                     <span>Notification</span>
@@ -328,17 +319,17 @@ export default function Header({props}) {
                       <span className="become-job">Become a Job</span>
                     </span>
                   </>
-                )}
+                )} */}
               </div>
             </div>
           </div>
         </nav>
       </div>
-      <Modal
+      {/* <Modal
         view={modalView}
         close={() => setModalView(null)}
         setView={setModalView}
-      />
+      /> */}
     </header>
   );
 }
