@@ -3999,6 +3999,9 @@ body.popup-open::after {
   background: transparent;
   color: rgba(0, 0, 0, 0.9);
 }
+.site-header .nav-shrink .navbar-nav .active > .nav-link {
+  color: #dd3375;
+}
 .breadcrumbs-link{
   color: #000;
 }
