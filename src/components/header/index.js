@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, NavLink } from "react-router-dom";
 import Modal from "../Modal";
 import { avatar, postTask } from "../../assets/images/index";
 import { UserContext } from "../../context/userContext";
@@ -7,6 +7,7 @@ import { UserContext } from "../../context/userContext";
 
 export default function Header({props}) {
   const { user, updateUser } = useContext(UserContext);
+  const [toggle, setToggle] = useState(false);
   const location = useLocation();
   const { logo } = props;
   // const [categories, setCategories] = useState([]);
@@ -101,7 +102,7 @@ export default function Header({props}) {
               <span>Post a task</span>
               <img src={postTask} alt="mob-post" />
             </span> */}
-            <span className="navbar-brand">
+            <span className="navbar-brand" onClick={() => setToggle(false)}>
               <Link to="/">
                 <img src={logo} alt="logo" className="logo" />
                 <img src={logo} alt="logo" className="logo-shrink" />
@@ -115,12 +116,14 @@ export default function Header({props}) {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={() => setToggle(!toggle)}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
             <div
-              className="collapse navbar-collapse"
+              className={`collapse navbar-collapse ${toggle ? "show" : ""}`}
               id="navbarSupportedContent"
+              onClick={() => setToggle(false)}
             >
               <ul className="navbar-nav ml-auto">
                 {/* <li className="nav-item">
@@ -241,19 +244,19 @@ export default function Header({props}) {
                   <span className="nav-link">Browse tasks</span>
                 </li> */}
                 <li className="nav-item">
-                  <Link to="/about_us">
+                  <NavLink to="/about_us">
                     <span className="nav-link">About Us</span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/contact_us">
+                  <NavLink to="/contact_us">
                     <span className="nav-link">Contact Us</span>
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/list">
+                  <NavLink to="/list">
                     <span className="nav-link">List</span>
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
               <div className="right-menu d-flex flex-wrap align-items-center">

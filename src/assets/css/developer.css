@@ -25,3 +25,7 @@
 bor:visited {
   border: 1px solid #000;
 }
+.custom-margin{
+  margin-right: 0px;
+  margin-left: 0px
+}

@@ -12,7 +12,10 @@ export default function List() {
           <h1>List</h1>
           <ul className="breadcrumbs">
             <li>
-              <a href={() => false}>Home</a>
+              {/* <NavLink to='/'>Home</NavLink> */}
+              <a className='breadcrumbs-link' href="/" onClick={(e) => e.preventDefault()}>
+                Home
+              </a>
             </li>
             <li>
               <span>List</span>
@@ -21,9 +24,9 @@ export default function List() {
         </div>
       </div>
       <div className="cms-content inner-page-content">
-        <div className="row">
+        <div className="row custom-margin">
           {ListFixer?.map((item, index) => (
-            <div className="col-4" key={index}>
+            <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
               <div
                 className="why-choose-block d-flex justify-content-between flex-wrap"
                 key={index}

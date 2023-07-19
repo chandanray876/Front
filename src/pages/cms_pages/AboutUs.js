@@ -29,7 +29,9 @@ export default function AboutUs() {
           <h1>About Us</h1>
           <ul className="breadcrumbs">
             <li>
-              <a href={() => false}>Home</a>
+            <a className='breadcrumbs-link' href="/" onClick={(e) => e.preventDefault()}>
+                Home
+              </a>
             </li>
             <li>
               <span>ABOUT US</span>

@@ -21,6 +21,18 @@ import {
 } from "../assets/images";
 import { api } from "../_api/apiService";
 
+const responsiveOptions = {
+  0: {
+    items: 1, // Show one item in mobile view
+  },
+  768: {
+    items: 3, // Show three items in tablet view
+  },
+  1024: {
+    items: 3, // Show five items in desktop view
+  },
+};
+
 export default function Home() {
   const { banner } = useOutletContext();
   const [blogList, setBlogList] = useState([]);
@@ -130,6 +142,9 @@ export default function Home() {
               margin={8}
               className="popular-service-slider owl-carousel owl-theme"
               nav
+              responsive={responsiveOptions}
+              autoplay = {true} 
+              autoplayTimeout = {3000}
             >
               {popularServicesFixer?.map((item, index) => (
                 <div className="item" key={index}>
@@ -221,6 +236,9 @@ export default function Home() {
             nav
             center={true}
             loop={true}
+            responsive={responsiveOptions}
+            autoplay = {true}
+            autoplayTimeout = {3000}
           >
             {testimonialsList?.map((testimonial, index) => (
               <div className="item" key={index}>

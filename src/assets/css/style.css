@@ -589,6 +589,9 @@ select.form-control {
   padding-bottom: 193px;
   position: relative;
 }
+.how-service-finder-works div[class*="col-"]:nth-child(3) .service-finder-block::after {
+  display: none;
+}
 .how-service-finder-works .row {
   margin: 0 -28px;
 }
@@ -3990,4 +3993,12 @@ body.popup-open::after {
 .offer-info li span.btn-custom i,
 .offer-info li span.btn-custom {
   color: #ffffff;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.9);
+}
+.breadcrumbs-link{
+  color: #000;
 }

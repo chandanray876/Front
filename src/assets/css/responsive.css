@@ -467,6 +467,8 @@
   }
   .why-choose-block {
     padding: 15px;
+    /* height: 100%; */
+    flex-direction: column;
   }
   .why-choose-col1 {
     -ms-flex: 0 0 45%;
@@ -770,6 +772,10 @@
 
 @media only screen and (max-width: 991px) {
   /*h2, .h2{font-size: 35px;}*/
+  .navbar-light .navbar-nav .active > .nav-link {
+    background: transparent;
+    color: #dd3375;
+  }
   .whyus h2 {
     font-size: 28px;
   }
@@ -1092,9 +1098,8 @@
     width: 15px;
   }
   .site-header .navbar .navbar-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    transform: none;
   }
   .nav-open .post-task-link span {
     display: block;
@@ -1105,9 +1110,9 @@
   .nav-open .post-task-link {
     width: auto;
   }
-  .site-header .navbar-nav li:first-child {
+  /* .site-header .navbar-nav li:first-child {
     display: none;
-  }
+  } */
   .mob-category {
     display: block;
   }

@@ -21,8 +21,8 @@ export default function Footer({ setting }) {
     >
       <div className="container">
         <div className="ft-top">
-          <div className="row">
-            <div className="col-lg-4 col-md-6 ft-about">
+          <div className="row justify-content-between">
+            <div className="col-lg-6 col-md-6 ft-about">
               <p>
                 <Link to="">
                   <img src={logo} alt="" />
@@ -60,8 +60,8 @@ export default function Footer({ setting }) {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-2 col-md-6 ft-links">
-              {/* <span className="ft-link-head">Navigation</span>
+            {/* <div className="col-lg-2 col-md-6 ft-links">
+              <span className="ft-link-head">Navigation</span>
               <ul className="ft-link">
                 <li>
                   <Link to="/">Home</Link>
@@ -87,10 +87,10 @@ export default function Footer({ setting }) {
                 <li>
                   <Link to="/contact_us">Contact Us</Link>
                 </li>
-              </ul> */}
-            </div>
-            <div className="col-lg-3 col-md-6 quick-links">
-              {/* <span className="ft-link-head">Quick Links</span>
+              </ul>
+            </div> */}
+            {/* <div className="col-lg-3 col-md-6 quick-links">
+              <span className="ft-link-head">Quick Links</span>
               <ul className="ft-link">
                 <li>
                   <Link to="/terms_conditions">Terms & Conditions</Link>
@@ -104,8 +104,8 @@ export default function Footer({ setting }) {
                 <li>
                   <Link to="/help_support">Help & Support</Link>
                 </li>
-              </ul> */}
-            </div>
+              </ul>
+            </div> */}
             <div className="col-lg-3 col-md-6">
               <span className="ft-link-head">Contacts</span>
               <ul className="ft-link">

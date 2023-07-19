@@ -143,7 +143,9 @@ export default function ContactUs() {
           <h1>Contact Us</h1>
           <ul className="breadcrumbs">
             <li>
-              <span>Home</span>
+              <a className='breadcrumbs-link' href="/" onClick={(e) => e.preventDefault()}>
+                Home
+              </a>
             </li>
             <li>
               <span>Contact Us</span>
